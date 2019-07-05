@@ -1,19 +1,27 @@
 body {
   font-family: 'Roboto', sans-serif; }
 
+h1,
+h2 {
+  font-family: 'Archivo Black', sans-serif; }
+
 .btn-grad {
   display: block;
-  color: #146c41;
+  color: white;
   font-size: 32px;
   text-align: center;
   line-height: 1;
   padding: 20px 0;
   text-decoration: none;
-  background-color: transparent;
-  border: 3px solid #146c41; }
+  background-color: #fb6108;
+  border: 4px solid white;
+  transition: .5s; }
 
 .btn-grad:hover {
-  background-color: #146c41;
+  border-left: 10px solid white;
+  border-right: 10px solid white;
+  border-radius: 25px;
+  background-color: green;
   color: white;
   text-decoration: none; }
 
@@ -23,22 +31,16 @@ nav {
   padding-top: 0 !important;
   padding-bottom: 0 !important; }
   nav .nav-btn {
-    background-color: #06af49;
+    background-color: #fb6108;
     height: 100%;
     padding: 10px 20px;
     border-radius: 0;
     color: white; }
   nav .nav-btn:hover {
-    background-color: red;
+    background-color: green;
     cursor: pointer; }
   nav .nav-item:not(.order-btn) {
     padding: 10px 5px; }
-
-nav .container {
-  position: relative; }
-  nav .container img {
-    position: absolute;
-    top: -35px; }
 
 img {
   width: 100%; }
@@ -50,74 +52,77 @@ img {
   color: #fb6108; }
 
 header {
-  background-image: url(../img/header_background.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  padding: 100px 0 20px 0; }
+  background-image: url(../img/brown-bg.jpg);
+  padding: 100px 0 20px 0;
+  color: white;
+  min-height: 500px; }
   header h1 {
     font-weight: 900;
-    font-size: 50px;
     letter-spacing: -1px;
     margin-top: 0;
-    font-family: 'Source Sans Pro', sans-serif; }
-    header h1 span {
-      color: #146c41; }
+    font-family: 'Archivo Black', sans-serif; }
   header h2 {
     text-transform: uppercase;
     font-weight: lighter;
-    font-size: 30px;
-    margin-bottom: 80px; }
+    margin-bottom: 60px; }
     header h2 span {
-      color: #146c41; }
+      color: black;
+      font-weight: bold; }
+  header img {
+    height: 441px;
+    width: auto;
+    position: absolute; }
 
 #info {
-  background-color: #e9ecef;
+  /*background-color: #e9ecef;*/
   padding: 40px 10px 40px 10px; }
   #info .container {
     padding: 10px 20px; }
     #info .container b {
-      color: #146c41; }
+      color: black; }
     #info .container h2 {
-      color: #146c41;
+      color: black;
       font-size: 30px;
       font-weight: 600; }
+    #info .container ol li {
+      color: black;
+      font-size: 24px;
+      font-weight: bold; }
+      #info .container ol li p {
+        margin-top: 16px;
+        font-size: 16px;
+        color: black;
+        font-weight: normal; }
     #info .container img {
-      width: 120%;
-      margin-left: -50px; }
-    #info .container ul {
-      padding-left: 22px; }
-      #info .container ul li {
-        text-align: center;
-        list-style: none; }
-        #info .container ul li b.list-bold {
-          font-size: 24px; }
-        #info .container ul li p {
-          margin-top: 16px; }
+      max-height: 700px;
+      width: auto; }
 
 #clinical {
+  font-weight: 600;
+  background-image: url(../img/yellow.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   transition: 1s;
   padding: 40px 10px; }
-  #clinical h2, #clinical b {
-    color: #146c41; }
+  #clinical h2,
+  #clinical b {
+    color: white; }
 
 #opinions {
-  background-image: url(../img/stock-photo-green-leaf-with-water-drop-on-black-background-402091975.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-image: url(../img/wheat.jpg);
   padding: 40px 10px; }
   #opinions .container h2 {
-    margin-bottom: 30px; }
+    margin-bottom: 30px;
+    color: white; }
   #opinions .container .opinion-box {
     padding-left: 0 !important;
-    border-right: 8px solid #146c41; }
+    border-right: 8px solid green; }
     #opinions .container .opinion-box img {
       float: left;
       margin-right: 20px; }
   #opinions .container .opinion-box-2 {
     padding-right: 0 !important;
-    border-left: 8px solid #146c41; }
+    border-left: 8px solid green; }
     #opinions .container .opinion-box-2 img {
       float: right;
       margin-left: 20px; }
@@ -133,11 +138,9 @@ header {
       text-align: center; }
 
 #order {
-  background-image: url(../img/header_background.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-image: url(../img/brown-bg.jpg);
   padding-top: 35px;
-  border-bottom: 5px solid #fb6107; }
+  color: white; }
   #order h1 {
     font-weight: 700;
     font-size: 50px;
@@ -148,9 +151,12 @@ header {
     font-size: 30px;
     margin-bottom: 80px; }
     #order h2 span {
-      color: #146c41; }
+      color: black;
+      font-weight: bold; }
   #order img {
-    width: 100%; }
+    display: block;
+    width: 75%;
+    margin: 0 auto; }
 
 footer {
   background-color: black;
@@ -161,6 +167,18 @@ footer {
     text-decoration: none; }
 
 @media (min-width: 772px) {
+  header,
+  #order {
+    background-repeat: repeat-x;
+    background-size: contain; }
+    header h1,
+    #order h1 {
+      font-size: 50px; }
+
+  #opinions {
+    background-repeat: no-repeat;
+    background-size: 100% 100%; }
+
   .opinion-box img,
   .opinion-box-2 img {
     float: left;
@@ -170,10 +188,27 @@ footer {
   .btn-grad {
     width: 50%; } }
 @media (max-width: 772px) {
+  header,
+  #order {
+    background-repeat: no-repeat;
+    background-size: cover; }
+    header h1,
+    #order h1 {
+      font-size: 40px; }
+    header h2,
+    #order h2 {
+      font-size: 24px; }
+
+  #opinions {
+    background-repeat: repeat;
+    background-size: contain; }
+
   .opinion-box,
   .opinion-box-2 {
     padding-left: 0;
-    padding-right: 0; }
+    padding-right: 0;
+    border-left: 8px solid green;
+    border-right: 8px solid green; }
     .opinion-box img,
     .opinion-box-2 img {
       float: none;
@@ -187,5 +222,11 @@ footer {
 
   .btn-grad {
     width: 100%; } }
+@media (max-width: 1300px) {
+  header img {
+    right: 0; } }
+@media (min-width: 1300px) {
+  header img {
+    right: 15%; } }
 
 /*# sourceMappingURL=main.css.map */

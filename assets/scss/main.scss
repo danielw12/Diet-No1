@@ -84,37 +84,36 @@ img {
 
 header {
     background-image: url(../img/brown-bg.jpg);
-    padding: 100px 0 20px 0;
+    padding: 59px 0 20px 0;
     color: white;
     min-height: 500px;
 
-    h1 {
-
-        font-weight: 900;
-
-        letter-spacing: -1px;
-        margin-top: 0;
-        font-family: 'Archivo Black', sans-serif;
-    }
-
-    h2 {
-        text-transform: uppercase;
-
-        font-weight: lighter;
-
-        margin-bottom: 60px;
+    .header-text {
+        z-index: 2;
 
 
-        span {
+        h1 {
+            font-weight: 900;
+            letter-spacing: -1px;
+            margin-top: 0;
+            font-family: 'Archivo Black', sans-serif;
+        }
 
-            color: black;
-            font-weight: bold;
+        h2 {
+            text-transform: uppercase;
+            font-weight: lighter;
+            margin-bottom: 60px;
 
+
+            span {
+                color: black;
+                font-weight: bold;
+            }
         }
     }
 
     img {
-        height: 400px;
+        
         width: auto;
         position: absolute;
 
@@ -184,7 +183,7 @@ header {
 
 #opinions {
     background-image: url(../img/wheat.jpg);
-    
+
     padding: 40px 10px;
 
     .container {
@@ -259,7 +258,7 @@ header {
 
     h2 {
         font-size: 30px;
-        margin-bottom: 80px;
+        margin-bottom: 40px;
 
         span {
             color: black;
@@ -303,10 +302,10 @@ footer {
 
 
     }
-    
+
     #opinions {
         background-repeat: no-repeat;
-    background-size: 100% 100%;
+        background-size: 100% 100%;
     }
 
     .opinion-box,
@@ -339,10 +338,10 @@ footer {
             font-size: 24px;
         }
     }
-    
-     #opinions {
+
+    #opinions {
         background-repeat: repeat;
-    background-size: contain;
+        background-size: contain;
     }
 
     .opinion-box,
@@ -371,21 +370,54 @@ footer {
 
 }
 
-@media (max-width: 1300px) {
+
+@media (max-width: 1198px) {
     header {
 
         img {
+            height: 472px;
+           
+        }
+    }
+}
+
+@media (min-width: 1198px) {
+    header {
+
+        img {
+            height: 441px;
+        }
+    }
+}
+
+@media (max-width: 1620px) {
+    header {
+
+        img {            
             right: 0;
         }
     }
 }
 
-@media (min-width: 1300px) {
+
+
+@media (min-width: 1620px) {
     header {
 
         img {
-            right: 15%;
+            right: 5%;
         }
     }
 }
 
+
+
+@media (min-width: 1820px) {
+    header {
+
+        img {
+            
+            right: 10%;
+        }
+    }
+}

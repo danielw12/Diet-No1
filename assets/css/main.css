@@ -53,23 +53,24 @@ img {
 
 header {
   background-image: url(../img/brown-bg.jpg);
-  padding: 100px 0 20px 0;
+  padding: 59px 0 20px 0;
   color: white;
   min-height: 500px; }
-  header h1 {
-    font-weight: 900;
-    letter-spacing: -1px;
-    margin-top: 0;
-    font-family: 'Archivo Black', sans-serif; }
-  header h2 {
-    text-transform: uppercase;
-    font-weight: lighter;
-    margin-bottom: 60px; }
-    header h2 span {
-      color: black;
-      font-weight: bold; }
+  header .header-text {
+    z-index: 2; }
+    header .header-text h1 {
+      font-weight: 900;
+      letter-spacing: -1px;
+      margin-top: 0;
+      font-family: 'Archivo Black', sans-serif; }
+    header .header-text h2 {
+      text-transform: uppercase;
+      font-weight: lighter;
+      margin-bottom: 60px; }
+      header .header-text h2 span {
+        color: black;
+        font-weight: bold; }
   header img {
-    height: 400px;
     width: auto;
     position: absolute; }
 
@@ -149,7 +150,7 @@ header {
     margin-bottom: 30px; }
   #order h2 {
     font-size: 30px;
-    margin-bottom: 80px; }
+    margin-bottom: 40px; }
     #order h2 span {
       color: black;
       font-weight: bold; }
@@ -222,11 +223,20 @@ footer {
 
   .btn-grad {
     width: 100%; } }
-@media (max-width: 1300px) {
+@media (max-width: 1198px) {
+  header img {
+    height: 472px; } }
+@media (min-width: 1198px) {
+  header img {
+    height: 441px; } }
+@media (max-width: 1620px) {
   header img {
     right: 0; } }
-@media (min-width: 1300px) {
+@media (min-width: 1620px) {
   header img {
-    right: 15%; } }
+    right: 5%; } }
+@media (min-width: 1820px) {
+  header img {
+    right: 10%; } }
 
 /*# sourceMappingURL=main.css.map */
