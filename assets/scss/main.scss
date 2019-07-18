@@ -17,8 +17,11 @@ h2 {
     line-height: 1;
     padding: 20px 0;
     text-decoration: none;
-    background-color: #fb6108;
+  background-image: linear-gradient(to right, #FFB75E 0%, #ED8F03 51%, #FFB75E 100%);
+    background-size: 200% auto;
     border: 4px solid white;
+    border-top-left-radius: 25px;
+    border-bottom-right-radius: 25px;
 
 
     transition: .5s;
@@ -27,12 +30,13 @@ h2 {
 }
 
 .btn-grad:hover {
-    border-left: 10px solid white;
-    border-right: 10px solid white;
-    border-radius: 25px;
-    background-color: green;
-    color: white;
+   
+   
+   
+   border-radius: 25px; 
     text-decoration: none;
+    color: white;
+     background-position: right center;
 }
 
 nav {
@@ -84,6 +88,7 @@ img {
 
 header {
     background-image: url(../img/brown-bg.jpg);
+   
     padding: 59px 0 20px 0;
     color: white;
     min-height: 500px;
@@ -140,7 +145,23 @@ header {
             font-size: 30px;
             font-weight: 600;
         }
+        
+        
+        .feature {
+            text-align: center;
+    max-width: 400px;
+    padding: 10px 10px 0 10px;
+    display: block;
+    margin: 10px auto;
+            
+            h3 {
+                font-size: 20px;
+    font-weight: 600;
+    border-bottom: 3px solid #b38a3e;
+            }
+        }
 
+/*
 
         ol {
 
@@ -158,10 +179,18 @@ header {
                 }
             }
         }
-
+*/
+        .product-box {
+            display: flex;
+            align-items: center;
+            
+            
         img {
+           
             max-height: 700px;
-            width: auto;
+            width: 100%;
+            
+        }
         }
     }
 }
@@ -197,7 +226,8 @@ header {
         .opinion-box {
             padding-left: 0 !important;
             border-right: 8px solid green;
-
+            height: 100%;
+           
 
             img {
                 float: left;
@@ -208,7 +238,7 @@ header {
 
         .opinion-box-2 {
             padding-right: 0 !important;
-
+ height: 100%;
             border-left: 8px solid green;
 
             img {
@@ -219,7 +249,7 @@ header {
 
         .opinion-box,
         .opinion-box-2 {
-            margin-bottom: 40px;
+           
             background-color: white;
             border-radius: 40px;
             overflow: hidden;
@@ -229,6 +259,9 @@ header {
 
         .text-box {
             padding: 30px 20px;
+             display: flex;
+justify-content: center;
+  flex-direction: column;
 
 
             h3 {
@@ -253,7 +286,10 @@ header {
         letter-spacing: -1px;
         margin-top: 0;
         margin-bottom: 30px;
-
+        span {
+            color: black;
+            font-weight: bold;
+        }
     }
 
     h2 {
@@ -319,7 +355,7 @@ footer {
     }
 
     .btn-grad {
-        width: 50%;
+        width: 90%;
     }
 }
 

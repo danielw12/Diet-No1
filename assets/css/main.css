@@ -13,21 +13,25 @@ h2 {
   line-height: 1;
   padding: 20px 0;
   text-decoration: none;
-  background-color: #fb6108;
+  background-image: -webkit-gradient(linear, left top, right top, from(#FFB75E), color-stop(51%, #ED8F03), to(#FFB75E));
+  background-image: linear-gradient(to right, #FFB75E 0%, #ED8F03 51%, #FFB75E 100%);
+  background-size: 200% auto;
   border: 4px solid white;
+  border-top-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  -webkit-transition: .5s;
   transition: .5s; }
 
 .btn-grad:hover {
-  border-left: 10px solid white;
-  border-right: 10px solid white;
   border-radius: 25px;
-  background-color: green;
+  text-decoration: none;
   color: white;
-  text-decoration: none; }
+  background-position: right center; }
 
 nav {
   background-color: white;
-  box-shadow: 0 0 20px black;
+  -webkit-box-shadow: 0 0 20px black;
+          box-shadow: 0 0 20px black;
   padding-top: 0 !important;
   padding-bottom: 0 !important; }
   nav .nav-btn {
@@ -78,31 +82,59 @@ header {
   /*background-color: #e9ecef;*/
   padding: 40px 10px 40px 10px; }
   #info .container {
-    padding: 10px 20px; }
+    padding: 10px 20px;
+    /*
+    
+            ol {
+    
+    
+                li {
+                    color: black;
+                    font-size: 24px;
+                    font-weight: bold;
+    
+                    p {
+                        margin-top: 16px;
+                        font-size: 16px;
+                        color: black;
+                        font-weight: normal;
+                    }
+                }
+            }
+    */ }
     #info .container b {
       color: black; }
     #info .container h2 {
       color: black;
       font-size: 30px;
       font-weight: 600; }
-    #info .container ol li {
-      color: black;
-      font-size: 24px;
-      font-weight: bold; }
-      #info .container ol li p {
-        margin-top: 16px;
-        font-size: 16px;
-        color: black;
-        font-weight: normal; }
-    #info .container img {
-      max-height: 700px;
-      width: auto; }
+    #info .container .feature {
+      text-align: center;
+      max-width: 400px;
+      padding: 10px 10px 0 10px;
+      display: block;
+      margin: 10px auto; }
+      #info .container .feature h3 {
+        font-size: 20px;
+        font-weight: 600;
+        border-bottom: 3px solid #b38a3e; }
+    #info .container .product-box {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center; }
+      #info .container .product-box img {
+        max-height: 700px;
+        width: 100%; }
 
 #clinical {
   font-weight: 600;
   background-image: url(../img/yellow.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  -webkit-transition: 1s;
   transition: 1s;
   padding: 40px 10px; }
   #clinical h2,
@@ -117,24 +149,35 @@ header {
     color: white; }
   #opinions .container .opinion-box {
     padding-left: 0 !important;
-    border-right: 8px solid green; }
+    border-right: 8px solid green;
+    height: 100%; }
     #opinions .container .opinion-box img {
       float: left;
       margin-right: 20px; }
   #opinions .container .opinion-box-2 {
     padding-right: 0 !important;
+    height: 100%;
     border-left: 8px solid green; }
     #opinions .container .opinion-box-2 img {
       float: right;
       margin-left: 20px; }
   #opinions .container .opinion-box,
   #opinions .container .opinion-box-2 {
-    margin-bottom: 40px;
     background-color: white;
     border-radius: 40px;
     overflow: hidden; }
   #opinions .container .text-box {
-    padding: 30px 20px; }
+    padding: 30px 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
     #opinions .container .text-box h3 {
       text-align: center; }
 
@@ -148,6 +191,9 @@ header {
     letter-spacing: -1px;
     margin-top: 0;
     margin-bottom: 30px; }
+    #order h1 span {
+      color: black;
+      font-weight: bold; }
   #order h2 {
     font-size: 30px;
     margin-bottom: 40px; }
@@ -187,7 +233,7 @@ footer {
     height: 300px; }
 
   .btn-grad {
-    width: 50%; } }
+    width: 90%; } }
 @media (max-width: 772px) {
   header,
   #order {

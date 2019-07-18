@@ -19,8 +19,12 @@ header {
     margin-right: 10px; }
 
 .head {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center; }
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
 
 section .container {
   padding: 20px;

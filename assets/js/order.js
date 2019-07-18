@@ -1,3 +1,4 @@
+/* dodaje klasę */
 $('.check-box :radio').change(function () {
     $(this).closest('.check-box').toggleClass('checked', this.checked);
 });
@@ -10,6 +11,10 @@ $(document).ready(function () {
     });
 });
 
+
+
+
+/* pobiera ceny */
 var ele = document.getElementsByClassName('iradio');
 
 function displayRadioValue() {
@@ -41,13 +46,15 @@ function displayTransport() {
         }
     }
 }
+/* ---------------------  */
 
+/*   liczy sumę */
 function calcscore(){
     var score = 0;
     $(".ala:checked").each(function(){
         score+=parseInt($(this).val(),10);
     });
-    $("input[name=sum]").val(score + ".00" + " zł")
+    $("input[name=sum]").val(score + 15 + ".00" + " zł")
 }
 $().ready(function(){
     $(".ala").change(function(){
@@ -55,7 +62,7 @@ $().ready(function(){
     });
 });
 
-
+/* ----------------------- */
 
 /*
 function displayResult() {
