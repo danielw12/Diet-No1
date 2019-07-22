@@ -13,3 +13,5 @@ $(window).scroll(function () {
         $("#transparent").removeClass("scrolled");
     }
 });
+
+
