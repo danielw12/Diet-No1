@@ -15,3 +15,11 @@ $(window).scroll(function () {
 });
 
 
+$('.slick-carousel').slick({
+  vertical:true,
+  verticalSwiping:true,
+  slidesToShow: 2,
+  slidesToScroll: 1,
+  prevArrow: $('.top-arrow'),
+  nextArrow: $('.bottom-arrow')
+});
